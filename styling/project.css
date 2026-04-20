@@ -1,0 +1,19 @@
+#project{
+    background-color: rgb(209, 203, 195);
+    align-items: center;
+    text-align: center;
+}
+#project h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(173, 54, 54);
+}
+#project ul{
+    list-style-type: none;
+}
+#project li{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    padding: 10px;
+}
