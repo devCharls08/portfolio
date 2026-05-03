@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px;
+    margin: 20px;
+    align-items: center;
+    flex-wrap: wrap; /* helps on small screens */
+}
+nav a:active {
+    font-weight: bold;
+    color: rgb(213, 218, 218);
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: rgb(213, 218, 218);
+    text-decoration: underline;
+}
+
+/* Tablet/Desktop */
+@media screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 400px){
+    nav{
+        flex-direction: column;
+    }    
+}

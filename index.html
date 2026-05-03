@@ -7,54 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+ <nav>
             <a href="#about">ABOUT ME</a>
             <a href="#skills">SKILLS</a>
             <a href="#project">PROJECT</a>
             <a href="#contact">CONTACT</a>
-        </nav>
-    <header>
-        <img src="assets/lagnason, charls david (4).JPG" alt="Profile Picture" ">
+ </nav>
+<header>
+    <img src="assets/lagnason, charls david (4).JPG" alt="Profile Picture">
         <h2>Charls David Lagnason</h2>
-        <p>Im anspiring students,who like to create website using HTML and CSS</p>
-    </header>
-
-    <section id="about">
+      <p>Aspiring web developer who enjoys building clean and responsive websites using HTML and CSS.</p>
+</header>
+<section id="about" >
         <h2>ABOUT ME</h2>
-        <p>I'm Charls future developer who is passionate about building simple and clean web pages using HTML and CSS.
+        <p>I'm Charls, a future developer who is passionate about building simple and clean web pages using HTML and CSS.
             I have a solid understanding of the basics including structuring content with HTML elements and styling layouts with CSS.
             I enjoy creating responsive designs, experimenting with colors, fonts, and layouts, and turning simple ideas into visually appealing web pages.
             I also like playing online games and watching movies in my free time and playing basketball with my friends. I am excited to continue learning and improving my skills as a web developer, and I look forward to creating more amazing projects in the future.
         </p>
-    </section>
-    <section id="skills">
+</section>
+<section id="skills" >
         <h2>SKILLS</h2>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Adaptability</li> 
-            <li>Hard Working</li>
+           <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Responsive Design</li>
+            <li>Basic JavaScript</li>
         </ul>
-    </section>
-    <section id="project">
-        <h2>My Projects</h2>
-        <ul>
-            <li><a href="https://gradestable.netlify.app/" target="_blank">Project 1</a>Grades Table</li>
-            <li><a href="https://charlsdavidlagnason.netlify.app/" target="_blank">Project 2</a>Poster</li>
-        </ul>
-    </section>
-    <section id="contact">
+</section>
+<section id="project" >
+        <h2>MY PROJECTS</h2>
+        <div class="project-container">
+        <article class="project-card">
+                <a href="https://gradestable.netlify.app/" target="_blank">
+                    <img src="assets/gradestable.jpeg" alt="gradestable" class="image-section"></a>
+                    <h3>Grade Table</h3>
+                    <P>A simple grading system that calculates student averages.</P>
+                </article>
+                <article class="project-card">
+                <a href="https://charlsdavidlagnason.netlify.app/" target="_blank">
+                    <img src="assets/poster.jpeg" alt="poster" class="image-section"></a>
+                    <h3>Poster</h3>
+                    <p>A creative simple poster for my favorite Bible Verse.</p>
+            </article>
+             
+        </div>
+</section>
+<section id="contact" >
         <h2>CONTACT</h2>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email Address">
-            <textarea rows="5" placeholder="Message"></textarea>
+        <form id="contactForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="5" placeholder="Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-    </section>
-    <footer>
+</section>
+<footer>
         <p>&copy; 2023 Charls David Lagnason. All rights reserved.</p>
-    </footer>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

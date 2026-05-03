@@ -2,165 +2,53 @@
 @import url(/styling/project.css);
 @import url(/styling/contact.css);
 @import url(/styling/skills.css);
+@import url(/styling/nav.css);
 
-*{
-    margin: 0;
+* {
     padding: 0;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
+    margin: 0;
 }
 body{
-    font-family: 'Segoe UI', arial, sans-serif;
-    background-color: rgb(96, 94, 128);
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(to left, #ceb1b1, #977575);
 }
 header{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    align-items: center;    
-    text-align: center;
+    align-items: center;
+    padding: 60px 20px;
 }
-nav{
-   display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-    padding: 20px;
-}
-nav a{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-nav a:hover{
-    cursor: pointer;
-    color: gray;
-    text-decoration: underline;
-}
-img {
-    width: 150px;
-    height: 150px;
+header img {
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    background-color: rgba(212, 90, 90, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
 }
-img:hover {
+
+header img:hover {
     transform: scale(1.05);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
-h2{
+header h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
-p{
+header p {
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: rgb(213, 218, 218);
 }
 section{
-    padding: 40px;
-    margin: 20px;
-    border-radius: 15px;
-    background-color: rgb(228, 225, 182);
+    margin: 40px 20px; 
+   
 }
-footer{
+footer {
     text-align: center;
     padding: 20px;
-    background-color: rgb(209, 203, 195);
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-}
- 
-   /* RESPONSIVE DESIGN*/
-
-/* Tablets (≤ 768px) */
-@media (max-width: 768px) {
-
-    nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    img {
-        width: 120px;
-        height: 120px;
-    }
-
-    section {
-        margin: 15px;
-        padding: 25px;
-    }
-
-    #contact input,
-    #contact textarea {
-        width: 90%;
-    }
+    background-color: #333;
+    color: white;
 }
 
-/* Phones (≤ 480px) */
-@media (max-width: 480px) {
-
-    header {
-        padding: 15px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    img {
-        width: 100px;
-        height: 100px;
-    }
-
-    section {
-        margin: 10px;
-        padding: 20px;
-    }
-
-    #skills li,
-    #project li {
-        font-size: 16px;
-        padding: 8px;
-    }
-
-    #contact input,
-    #contact textarea {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    #contact button {
-        width: 100%;
-    }
-}
-
-/* Large screens (≥ 1024px) */
-@media (min-width: 1024px) {
-
-    body {
-        max-width: 1100px;
-        margin: auto;
-    }
-
-    section {
-        margin: 30px auto;
-    }
-}
+    /* RESPONSIVE DESIGN*/
